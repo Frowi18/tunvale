@@ -199,7 +199,7 @@
     </div>
   </section>
 
-  <!-- скриншоты: положи рядом файлы shot1.png ... shot6.png - лишние места спрячутся сами -->
+  <!-- скриншоты: показываются те из shot1.png ... shot30.png, что лежат рядом (по порядку номеров) -->
   <section id="screens">
     <div class="wrap">
       <h2>Screenshots</h2>
@@ -255,7 +255,7 @@
     var box = document.getElementById('shots');
     var sec = document.getElementById('screens');
     var nav = document.getElementById('navScreens');
-    var loaded = 0, done = 0, total = 6;
+    var loaded = 0, done = 0, total = 30;
     for (var i = 1; i <= total; i++) {
       (function (n) {
         var img = new Image();
